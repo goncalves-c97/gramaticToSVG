@@ -61,9 +61,7 @@ public class SvgManager {
                     break;
             }
             
-            //svgOutput += "<line x1 = \"" + x1 + "\" y1 = \"" + y1 + "\" x2 = \"" + x2 + "\" y2 = \"" + y2 + "\" style = \"stroke:rgb(" + red + "," + green + "," + blue + ");stroke-width:" + strokeWidth + "\" />\n";
             svgOutput += "<line x1 = \"" + x1 + "\" y1 = \"" + y1 + "\" x2 = \"" + x2 + "\" y2 = \"" + y2 + "\" style = \"stroke:rgb(" + red + "," + green + "," + blue + ");stroke-width:" + strokeWidth + "\" />\n";
-            //svgOutput += "<line x1 = \"" + x1 + "\" y1 = \"" + y1 + "\" x2 = \"" + x2 + "\" y2 = \"" + y2 + "\" />\n";
             x1 = x2;
             y1 = y2;
         }

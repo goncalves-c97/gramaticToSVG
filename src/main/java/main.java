@@ -8,19 +8,27 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class main {
 
     public static void main(String[] args) throws IOException {
 
+        Scanner scanner = new Scanner(new File("gramatica.txt"));
+        String gramatic = "";
+        
+        boolean valid = true;
+        
+        while (scanner.hasNextLine()) {
+            gramatic += scanner.nextLine();
+        }
+        
         ArrayList<String> words = new ArrayList<>();
 
         words.add("E");
         words.add("+");
         words.add("-");
-
-        String gramatic = "E+E+E+E+EE--E+EEE+E";
-
+        
         ArrayList<String> rules = new ArrayList<>();
 
         rules.add("E-EE-EEE-EE-E+EE++E+++EEE--EE--E");
